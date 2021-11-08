@@ -1,0 +1,198 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+body {
+        
+    height: 100%;
+}
+
+html {
+
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+header {    
+    background: #56CCF2;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header_contacts {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header_contacts a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.gallery {
+    width: 100%;
+    padding: 32px 0;
+}
+
+.check_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select_btn, .clear_btn {
+    width: 49%;
+    background: #E0E0E0;
+    border-radius: 8px;
+    border:none;
+    padding: 6px;
+}
+
+.gallery_all {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 18px;
+    margin-top: 32px;
+}
+
+.gallery_item {
+    display: flex;
+    position: relative;  
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery_photo {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #BDBDBD;
+}
+
+.item_check, .item_check_selected {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 28px;
+}
+
+.item_trash {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 28px;
+}
+
+.photographer {
+    max-width: 310px;
+    padding: 22px 0 0px 0;
+    margin: 32px 0 32px 32px;
+    background: #E0E0E0;
+    border-radius: 16px;
+    /* box-sizing: border-box; */
+}
+
+.photographer_title, .photographer_name {
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.photographer_photo {
+    max-width: 310px;
+    margin: 14px 0;
+}
+
+.photo_amount_title {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+}
+
+.photo_amount, .total_price {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+}
+
+.total_price_btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 18px 42px;
+    color: #FFFFFF;
+    background: #219653;
+    border-radius: 8px;
+    border:none;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 40px 0 40px 0;
+
+}
+
+.footer {   
+    background: #56CCF2;
+    padding: 16px 0;
+
+}
+
+/* ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: var(--gap);
+}
+
+
+button {
+    all: initial;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}   */
