@@ -1,15 +1,8 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
 }
 
-body {
-        
-    height: 100%;
-}
-
-html {
-
+body, html {        
     height: 100%;
 }
 
@@ -124,7 +117,6 @@ h1 {
     margin: 32px 0 32px 32px;
     background: #E0E0E0;
     border-radius: 16px;
-    /* box-sizing: border-box; */
 }
 
 .photographer_title, .photographer_name {
@@ -173,26 +165,4 @@ h1 {
 .footer {   
     background: #56CCF2;
     padding: 16px 0;
-
 }
-
-/* ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: var(--gap);
-}
-
-
-button {
-    all: initial;
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}   */
