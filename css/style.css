@@ -100,16 +100,41 @@ h1 {
 .item_check, .item_check_selected {
     position: absolute;
     bottom: 0px;
-    left: 0px;
-    width: 28px;
-}
-
-.item_trash {
-    position: absolute;
-    bottom: 0px;
     right: 0px;
     width: 28px;
 }
+
+.photo_check_selected {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+.photo_check_selected+label {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: inline-flex;   
+    align-items: center;
+  }
+
+.photo_check_selected+label::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url(/icons/check.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.photo_check_selected:checked+label::before {
+    background-image: url(/icons/check-selected.svg);
+}
+
 
 .photographer {
     max-width: 310px;
