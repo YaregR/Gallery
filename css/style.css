@@ -125,14 +125,14 @@ h1 {
     content: '';
     width: 28px;
     height: 28px;
-    background-image: url(/icons/check.svg);
+    background-image: url(./icons/check.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
 .photo_check_selected:checked+label::before {
-    background-image: url(/icons/check-selected.svg);
+    background-image: url(./icons/check-selected.svg);
 }
 
 
